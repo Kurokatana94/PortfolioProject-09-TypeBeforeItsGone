@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block body %}
+  <div class="container mt-5">
+    <div class="row justify-content-end">
+      <div class="col-md-6 mx-3">
+        <div class="text-center mb-4">
+          <h1>Type Before It's Gone</h1>
+          <p class="lead">Stop typing and all will be erased. Are you ready?</p>
+        </div>
+      </div>
+      <!-- ================== DARK/LIGHT MODE ================== -->
+      <div class="col-md-3">
+        <div class="col-md-1 offset-md-11">
+          <a type="button" id="theme-toggle" style="font-size: 1.5rem;">🌗</a>
+        </div>
+      </div>
+    </div>
+    <!-- ================== INSPIRATIONAL SENTECE ================== -->
+    <div class="row justify-content-center my-2">
+      <div class="col-md-6 mx-3 offset-md-3 text-center">
+        <button type="button" class="btn btn-primary mb-3" id="get-sentence">Inspire Me!</button>
+        <p id="inspirational-sentence" style="font-size: 24px;"></p>
+        <p id="author" style="font-size: 18px; font-style: italic;"></p>
+      </div>
+    </div>
+    <!-- ================== TEXT AREA ================== -->
+    <div class="row justify-content-center">
+      <div class="col-md-6 mx-3 offset-md-3">
+        <textarea class="form-control input-field" id="user-text" placeholder="Type here..." rows="20" style="height: 55vh;"></textarea>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
